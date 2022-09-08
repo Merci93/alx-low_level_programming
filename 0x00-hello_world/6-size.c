@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
  * main - prints the sizes of various types in C
  * Return: 0 if successful, else non-zero
  */
@@ -11,5 +11,5 @@ int main(void)
 	printf("SIze of a long int: %d byte(s)\n", sizeof(long int));
 	printf("Size of a long long int: %d byte(s)\n", sizeof(long long int));
 	printf("Size of a float: %d byte(s)\n", sizeof(float));
-	return 0;
+	return (0);
 }
