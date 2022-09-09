@@ -4,7 +4,6 @@
  * main - print alphabets in lower case
  * Return: 0 if successful
  */
-
 int main(void)
 {
 	char c;
