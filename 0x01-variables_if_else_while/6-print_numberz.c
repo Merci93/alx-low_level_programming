@@ -14,5 +14,5 @@ int main(void)
 		putchar(n);
 	}
 	putchar('\n');
-	rerutn (0);
+	return (0);
 }
