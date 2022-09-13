@@ -4,8 +4,8 @@
  * print_sign - prints the sign of an integer
  * @n: integer to check
  * Return: 1 and prints + if n is greater than 0
- * 	   0 and prints 0 if n is 0
- * 	  -1 and prints - if n is less than 0
+ * 	0 and prints 0 if n is 0
+ * 	-1 and prints - if n is less than 0
  */
 
 int print_sign(int n)
@@ -17,7 +17,7 @@ int print_sign(int n)
 	}
 	else if (n == 0)
 	{
-		_putchar(0);
+		_putchar(48);
 		return (0);
 	}
 	else
