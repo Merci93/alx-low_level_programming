@@ -8,17 +8,22 @@
 int main(void)
 {
 	int i;
-	long int fib[40], sum = 0;
+	long int i, j, next, sum;
 
-	fib[0] = 1;
-	fib[1] = 2;
+	j = 1;
+	k = 2;
+	sum = 0;
 
-	for (i = 0; i < 50; i++)
+	for (i = 1; i < 50; i++)
 	{
-		fib[i] = fib[i - 1] + fib[i - 2];
-		if ((fib[i] % 2 == 0) && (fib[i] < 4000000))
-			sum += fib[i];
+		if ((j % 2) == 0 && j < 4000000)
+		{
+			sum += j;
+		}
+		next = j + k;
+		j = k;
+		k = next;
 	}
-	printf("%ld\n", sum);
+	printf("%lu\n", sum);
 	return (0);
 }
