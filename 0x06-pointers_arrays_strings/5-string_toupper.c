@@ -6,7 +6,7 @@
  * Return: changed string
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *s)
 {
 	int x;
 
@@ -14,9 +14,8 @@ char *string_toupper(char *)
 	{
 		if (s[x] >= 'a' && s[x] <= 'z')
 		{
-			s[x] = s[x] - 32;
+			s[x] -= 32;
 		}
-
 	}
 	return (s);
 }
