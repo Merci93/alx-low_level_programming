@@ -2,7 +2,7 @@
 
 /**
  * rot13 - a function that encodes a string using rot13
- * @c: string to be encoded
+ * @s: string to be encoded
  * Return: encoded string
  */
 
