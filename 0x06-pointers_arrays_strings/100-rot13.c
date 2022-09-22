@@ -6,25 +6,25 @@
  * Return: encoded string
  */
 
-char *rot13(char *c)
+char *rot13(char *s)
 {
 	int i = 0;
 
-	while (c[i] != '\0')
+	while (s[i] != '\0')
 	{
-		while ((c[i] >= "a" && c[i] <= "z") || (c[i] >= "A" && c[i] <= "Z"))
+		while ((s[i] >= "a" && s[i] <= "z") || (s[i] >= "A" && s[i] <= "Z"))
 		{
-			if ((c[i] >= "a" && c[i] <= "m") || (c[i] >= "A" && c[i] <= "M"))
+			if ((s[i] >= "a" && s[i] <= "m") || (s[i] >= "A" && s[i] <= "M"))
 			{
-				c[i] += 13;
+				s[i] += 13;
 			}
 			else
 			{
-				c[i] -= 13;
+				s[i] -= 13;
 			}
 			i++;
 		}
 		i++;
 	}
-	return (c);
+	return (s);
 }
