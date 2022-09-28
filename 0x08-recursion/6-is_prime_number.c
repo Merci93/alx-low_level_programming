@@ -16,9 +16,10 @@ int is_prime_number(int n)
 }
 
 /**
- * prime_number - a function that calculates if a number is primes using recursion
+ * prime_number - calculate prime number
  * @n: integer to evaluate
  * @x: result of division check
+ * Return: 1 if prime, 0 if not
  */
 
 int prime_number(int n, int x)
@@ -27,5 +28,5 @@ int prime_number(int n, int x)
 		return (1);
 	if (n % x == 0 && x > 0)
 		return (0);
-	return (prime_number(n, n- 1));
+	return (prime_number(n, x - 1));
 }
