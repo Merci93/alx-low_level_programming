@@ -1,26 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 
 /**
  * main - A proogram that prints the minimum number of coins to
  * make change for an amount of money
- * @argc: The arguements' counter
- * @argv: The argument's values
- * Return: 1 if the number of arguments passed is not exactly
- * or 0 in otherwise
+ * @argc: number of arguments
+ * @argv: array pointer
+ * Return:  0 if successful
  */
-int main(int argc, char **argv)
+
+int main(int argc, char *argv[])
 {
-	int amount;
-	int coins = 0;
+	int amount, coins = 0;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-
 	else
 	{
 		amount = atoi(argv[1]);
