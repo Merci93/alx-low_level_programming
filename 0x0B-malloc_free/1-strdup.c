@@ -2,8 +2,8 @@
 #include "main.h"
 
 /**
- * *_strdup - a function that returns a pointer to a newly allocated space in memory
- * @*str: string whose pointer dublicate is to be returned
+ * *_strdup - a function that returns a pointer to duplicate string
+ * @str: string whose pointer dublicate is to be returned
  * Return: Null if str is NULL or pointer to dublicate.
  */
 
