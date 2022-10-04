@@ -6,6 +6,7 @@
  * @str: An input pointer of the string to split
  * Return: Apointer to concatened strings or NULL if it str is NULL
  */
+
 char **strtow(char *str)
 {
 	char **array;
